@@ -17,7 +17,7 @@ public class PengolahMataKuliah {
     // 1. Membaca file matakuliah.csv baris demi baris
     public boolean bacaFileMataKuliah(String namaFile) {
         try (BufferedReader br = new BufferedReader(new FileReader(namaFile))) {
-            String baris = br.readLine(); // Lewati baris pertama (header)
+            String baris = br.readLine(); 
             baris = br.readLine();
 
             while (baris != null) {
