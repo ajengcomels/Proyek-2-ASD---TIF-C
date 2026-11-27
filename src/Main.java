@@ -50,6 +50,10 @@ public class Main {
     public static void prosesRekomendasi(String fileMK, String filePrasyarat, String fileMhs,
             LinkedListMK daftarMK, LinkedListPrasyarat daftarPrasyarat, LinkedListKode daftarLulus) {
         // TODO: sambungkan method Refi, Ulfa, dan Zabrina sesuai urutan di atas
+
+        // method PengolahMataKuliah 
+        PengolahMataKuliah pengolahMK = new PengolahMataKuliah(daftarMK);
+        pengolahMK.bacaFileMataKuliah(fileMK);
     }
 
     /**
